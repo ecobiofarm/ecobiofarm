@@ -1,6 +1,10 @@
 ﻿using EcoBioFarm.Data;
+using EcoBioFarm.Data.Contracts;
 using EcoBioFarm.Data.Models;
-using EcoBioFarm.Services;
+using EcoBioFarm.Data.Repository;
+using EcoBioFarm.Service;
+using EcoBioFarm.Service.Contract;
+using EcoBioFarm.Service.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -32,6 +36,10 @@ namespace EcoBioFarm
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
+            services.AddScoped<IEcoBioFarmService, EcoBioFarmService>();
+
+            services.AddScoped(typeof(IRDBERepository<>), typeof(RDBERepository<>));
+
             services.AddMvc();
         }
 
@@ -55,6 +63,10 @@ namespace EcoBioFarm
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                    name: "areas",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

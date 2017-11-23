@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EcoBioFarm.Data\EcoBioFarm.Data.csproj" />
+    <ProjectReference Include="..\EcoBioFarm.Service\EcoBioFarm.Service.csproj" />
   </ItemGroup>
 
 </Project>

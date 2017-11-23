@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using EcoBioFarm.Models;
 using Microsoft.AspNetCore.Mvc;
-using EcoBioFarm.Models;
+using System.Diagnostics;
 
 namespace EcoBioFarm.Controllers
 {
@@ -28,6 +24,7 @@ namespace EcoBioFarm.Controllers
 
             return View();
         }
+
 
         public IActionResult Error()
         {
