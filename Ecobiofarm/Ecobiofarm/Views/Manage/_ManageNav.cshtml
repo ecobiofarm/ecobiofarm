@@ -1,4 +1,6 @@
-﻿@using Ecobiofarm.Views.Manage
+﻿@using EcoBioFarm.Views.Manage
+@using EcoBioFarm.Data.Models
+
 @inject SignInManager<ApplicationUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();

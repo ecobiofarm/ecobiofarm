@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using Ecobiofarm.Services;
+using EcoBioFarm.Services;
 
-namespace Ecobiofarm.Services
+namespace EcoBioFarm.Services
 {
     public static class EmailSenderExtensions
     {

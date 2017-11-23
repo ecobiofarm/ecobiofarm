@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Ecobiofarm.Data.Models
+namespace EcoBioFarm.Data.Models
 {
     public class Product
     {
@@ -17,7 +17,7 @@ namespace Ecobiofarm.Data.Models
         public string Name { get; set; }
 
         public string Description { get; set; }
-        
+
         public virtual IEnumerable<Cut> Cuts { get; set; }
 
         public string Discount { get; set; }

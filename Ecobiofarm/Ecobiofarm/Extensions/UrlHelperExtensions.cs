@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Ecobiofarm.Controllers;
+using EcoBioFarm.Controllers;
 
 namespace Microsoft.AspNetCore.Mvc
 {

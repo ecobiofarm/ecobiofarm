@@ -1,4 +1,4 @@
-﻿namespace Ecobiofarm.Data.Models
+﻿namespace EcoBioFarm.Data.Models
 {
     public class Cut
     {

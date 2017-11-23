@@ -1,6 +1,6 @@
 using System;
 
-namespace Ecobiofarm.Models
+namespace EcoBioFarm.Models
 {
     public class ErrorViewModel
     {

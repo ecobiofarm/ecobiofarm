@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace Ecobiofarm.Models.ManageViewModels
+namespace EcoBioFarm.Models.ManageViewModels
 {
     public class ExternalLoginsViewModel
     {

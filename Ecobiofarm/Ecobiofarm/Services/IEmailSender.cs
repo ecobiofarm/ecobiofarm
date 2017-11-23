@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ecobiofarm.Services
+namespace EcoBioFarm.Services
 {
     public interface IEmailSender
     {

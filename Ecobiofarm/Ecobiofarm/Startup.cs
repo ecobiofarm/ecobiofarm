@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using EcoBioFarm.Data;
+using EcoBioFarm.Data.Models;
+using EcoBioFarm.Services;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Ecobiofarm.Data;
-using Ecobiofarm.Models;
-using Ecobiofarm.Services;
 
-namespace Ecobiofarm
+namespace EcoBioFarm
 {
     public class Startup
     {

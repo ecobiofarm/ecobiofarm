@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using EcoBioFarm.Data.Models;
+using EcoBioFarm.Models.AccountViewModels;
+using EcoBioFarm.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Ecobiofarm.Models;
-using Ecobiofarm.Models.AccountViewModels;
-using Ecobiofarm.Services;
+using System;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
-namespace Ecobiofarm.Controllers
+namespace EcoBioFarm.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

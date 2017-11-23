@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
+﻿using EcoBioFarm.Data.Models;
+using EcoBioFarm.Models.ManageViewModels;
+using EcoBioFarm.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Ecobiofarm.Models;
-using Ecobiofarm.Models.ManageViewModels;
-using Ecobiofarm.Services;
+using System;
+using System.Linq;
+using System.Text;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
 
-namespace Ecobiofarm.Controllers
+namespace EcoBioFarm.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]
@@ -495,7 +493,7 @@ namespace Ecobiofarm.Controllers
         {
             return string.Format(
                 AuthenicatorUriFormat,
-                _urlEncoder.Encode("Ecobiofarm"),
+                _urlEncoder.Encode("EcoBioFarm"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }
